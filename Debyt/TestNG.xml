@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="AmptifyV1">
+
+<listeners>
+	<listener  class-name="com.amptify.utilities.Reporting" /> 
+</listeners>
+
+
+<test name="Amptify V1">
+
+<parameter name = "browser" value = "chrome"/>
+
+<classes> 
+	<class name = "com.amptify.testCases.TC_LoginDDT_002" />
+</classes>
+
+</test>
+</suite>
