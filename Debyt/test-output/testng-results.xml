@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12" started-at="2020-05-19T19:30:26Z" finished-at="2020-05-19T19:30:26Z">
+  <suite name="Default suite" duration-ms="3691" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12" started-at="2020-05-19T19:30:26Z" finished-at="2020-05-19T19:30:26Z">
+    <test name="Default test" duration-ms="3691" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
+      <class name="com.debyt.database.ConnectSQLServer">
+        <test-method status="PASS" signature="testDB()[pri:0, instance:com.debyt.database.ConnectSQLServer@5622fdf]" name="testDB" duration-ms="3654" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDB -->
+      </class> <!-- com.debyt.database.ConnectSQLServer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

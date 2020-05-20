@@ -8,12 +8,15 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.google.common.annotations.VisibleForTesting;
+@Test
 public class ConnectSQLServer {
 
 	
-	public void testDB(Object ArrayList) throws ClassNotFoundException, SQLException
+	public void testDB() throws ClassNotFoundException, SQLException
 	{
 		
 		
@@ -22,17 +25,28 @@ public class ConnectSQLServer {
 	String url = "jdbc:sqlserver://debytqasql.database.windows.net;databaseName=qamssqldebyt";
 	String UserName="debytQA";
 	String Password="Thf7yt39b9";
+	String email = "nubaid@gmail.com";
 	
 	Connection con = DriverManager.getConnection(url, UserName, Password);
 	
 	System.out.println("Connected to DB");
 	
-	String query = "Select top 1 email from dbo.accounts;";
-	Statement statement = con.createStatement();
+	String query = "Select VerifyEmailToken from dbo.accounts where email = '"+email+"';";
 	
-	ResultSet rst = statement.executeQuery(query);
+	Statement stmt = con.createStatement();
 	
-	System.out.println("result: "+rst);
+	ResultSet rst = stmt.executeQuery(query);
+	
+	while (rst.next())
+	{
+		String result = rst.getNString(1);
+		
+		System.out.println ("Token: "+result);
+	}
+	
+	con.close();
+	
+	
 
 }
 	}
