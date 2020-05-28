@@ -77,6 +77,10 @@ public class LoginPage {
 	 @CacheLookup
 	 WebElement chkbox_agree;
 	 
+	 @FindBy(xpath = "//*[@id=\"root\"]/div/div[2]/div/div/div/div[2]/form/div[12]/div/div/span/button")
+	 @CacheLookup
+	 WebElement btn_cont;
+	 
 	 //Action Methods for signin page 
 	 
 	 public void setEmail(String email)
@@ -121,5 +125,39 @@ public class LoginPage {
 		 txt_lastName.sendKeys(lastName);
 	 }
 	 
+	 public void setWorkEmail(String workEmail)
+	 {
+		 txt_workEmail.sendKeys(workEmail);
+	 }
+	 
+	 public void setPassword(String password)
+	 {
+		 txt_password.sendKeys(password);
+	 }
+	 
+	 public void setCompanyName(String companyName)
+	 {
+		 txt_companyName.sendKeys(companyName);
+	 }
+	 
+	 public void setCompanyPhone(String companyPhone)
+	 {
+		 txt_companyPhone.sendKeys(companyPhone);
+	 }
+	 
+	 public void setCompanyWebsite(String companyWebsite)
+	 {
+		 txt_companyWebsite.sendKeys(companyWebsite);
+	 }
+	 
+	 public void chkAgreeBox()
+	 {
+		 chkbox_agree.click();
+	 }
+	 
+	 public void clickContinue()
+	 {
+		 btn_cont.click();
+	 }
 	 
 }

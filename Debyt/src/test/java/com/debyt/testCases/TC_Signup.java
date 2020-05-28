@@ -14,7 +14,7 @@ import junit.framework.Assert;
 public class TC_Signup extends BaseClass{
 
 	@Test
-	public void signup() throws IOException 
+	public void signup() throws IOException, InterruptedException 
 	{
 		logger.info("URL is opened");
 		
