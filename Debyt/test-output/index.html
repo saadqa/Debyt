@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Debyt" class="show-methods passed suite-Debyt"> (show)</a> <!-- show-methods passed suite-Debyt -->
                     </span>
                     <div class="method-list-content passed suite-Debyt">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Debyt" title="com.debyt.testCases.TC_Signup" hash-for-method="createAccount">createAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Debyt" title="com.debyt.testCases.TC_Signup" hash-for-method="signup">signup</a> <!-- method navigator-link -->
@@ -123,6 +128,13 @@
               <span class="class-name">com.debyt.testCases.TC_Signup</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createAccount">
+                  </a> <!-- createAccount -->
+                  <span class="method-name">createAccount</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="signup">
@@ -188,16 +200,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'signup')
+data.setCell(0, 1, 'createAccount')
 data.setCell(0, 2, 'com.debyt.testCases.TC_Signup')
-data.setCell(0, 3, 3104);
+data.setCell(0, 3, 1341);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'signup')
+data.setCell(1, 2, 'com.debyt.testCases.TC_Signup')
+data.setCell(1, 3, 1019);
 window.suiteTableData['Debyt']= { tableData: data, tableDiv: 'times-div-Debyt'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 2 seconds</span>
               <div id="times-div-Debyt">
               </div> <!-- times-div-Debyt -->
             </div> <!-- times-div -->
@@ -230,12 +246,12 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">signup</span>
-                <span class="method-start">16981 ms</span>
+                <span class="method-start">18107 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">teardown</span>
-                <span class="method-start">20104 ms</span>
-              </div> <!-- configuration-class after -->
+              <div class="test-method">
+                <span class="method-name">createAccount</span>
+                <span class="method-start">19143 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

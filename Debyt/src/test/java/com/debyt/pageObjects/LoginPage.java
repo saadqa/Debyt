@@ -19,8 +19,7 @@ public class LoginPage {
 	 
 	 //Page Elements for login page
 	 
-	 @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div/a")
-	 @CacheLookup
+	 @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div/a")	 
 	 WebElement signupBtn;
 	 
 	 @FindBy(id = "email")
@@ -98,7 +97,7 @@ public class LoginPage {
 		 loginBtn.click();
 	 }
 	 
-	 public void clickSignupBtn()
+	 public void clickSignupBtn() throws InterruptedException
 	 {
 		 signupBtn.click();
 	 }
@@ -159,5 +158,8 @@ public class LoginPage {
 	 {
 		 btn_cont.click();
 	 }
+
+
+	
 	 
 }

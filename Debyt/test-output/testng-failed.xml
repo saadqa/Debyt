@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Debyt]">
-  <listeners>
-    <listener class-name="com.debyt.utilities.Reporting"/>
-  </listeners>
-  <test thread-count="5" name="Debyt automation(failed)">
-    <parameter name="browser" value="chrome"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="com.debyt.testCases.TC_Signup">
         <methods>
           <include name="teardown"/>
           <include name="signup"/>
           <include name="setup"/>
+          <include name="createAccount"/>
         </methods>
       </class> <!-- com.debyt.testCases.TC_Signup -->
     </classes>
-  </test> <!-- Debyt automation(failed) -->
-</suite> <!-- Failed suite [Debyt] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

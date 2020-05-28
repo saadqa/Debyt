@@ -8,6 +8,7 @@
           <include name="teardown"/>
           <include name="signup"/>
           <include name="setup"/>
+          <include name="createAccount"/>
         </methods>
       </class> <!-- com.debyt.testCases.TC_Signup -->
     </classes>
