@@ -2,20 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="AmptifyV1">
+<suite name = "Debyt">
 
 <listeners>
-	<listener  class-name="com.amptify.utilities.Reporting" /> 
+
+<listener class-name = "com.debyt.utilities.Reporting"/>
 </listeners>
 
 
-<test name="Amptify V1">
 
-<parameter name = "browser" value = "chrome"/>
+	<test name = "Debyt automation">
+		<parameter name = "browser" value = "chrome"/>
+		<classes>
+	  	 <!--  	 -->
+			<class name = "com.debyt.testCases.TC_Signup" />
+		</classes>
+	</test>
 
-<classes> 
-	<class name = "com.amptify.testCases.TC_LoginDDT_002" />
-</classes>
-
-</test>
 </suite>

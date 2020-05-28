@@ -34,8 +34,10 @@ public class BaseClass {
 	
 	public static Logger logger;
 	
-	@Parameters("browser")
+
 	@BeforeClass
+	@Parameters("browser")
+	
 	public void setup(String br)
 	{
 				

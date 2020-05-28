@@ -3,11 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.debyt.database.ConnectSQLServer">
+      <class name="com.debyt.testCases.TC_Signup">
         <methods>
-          <include name="testDB"/>
+          <include name="teardown"/>
+          <include name="signup"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.debyt.database.ConnectSQLServer -->
+      </class> <!-- com.debyt.testCases.TC_Signup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

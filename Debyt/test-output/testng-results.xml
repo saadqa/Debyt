@@ -2,16 +2,31 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3691" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
+  <suite name="Debyt" duration-ms="21156" started-at="2020-05-28T12:19:35Z" finished-at="2020-05-28T12:19:56Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3691" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
-      <class name="com.debyt.database.ConnectSQLServer">
-        <test-method status="PASS" signature="testDB()[pri:0, instance:com.debyt.database.ConnectSQLServer@5622fdf]" name="testDB" duration-ms="3654" started-at="2020-05-20T19:23:27Z" finished-at="2020-05-20T19:23:30Z">
+    <test name="Debyt automation" duration-ms="21156" started-at="2020-05-28T12:19:35Z" finished-at="2020-05-28T12:19:56Z">
+      <class name="com.debyt.testCases.TC_Signup">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup@2f686d1f]" name="setup" is-config="true" duration-ms="16971" started-at="2020-05-28T12:19:35Z" finished-at="2020-05-28T12:19:52Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testDB -->
-      </class> <!-- com.debyt.database.ConnectSQLServer -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signup()[pri:0, instance:com.debyt.testCases.TC_Signup@2f686d1f]" name="signup" duration-ms="3104" started-at="2020-05-28T12:19:52Z" finished-at="2020-05-28T12:19:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signup -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup@2f686d1f]" name="teardown" is-config="true" duration-ms="819" started-at="2020-05-28T12:19:55Z" finished-at="2020-05-28T12:19:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.debyt.testCases.TC_Signup -->
+    </test> <!-- Debyt automation -->
+  </suite> <!-- Debyt -->
 </testng-results>
