@@ -15,7 +15,8 @@
 		<parameter name = "browser" value = "chrome"/>
 		<classes>
 	  	 <!--  	 -->
-			<class name = "com.debyt.testCases.TC_Signup" />
+		<!--  	<class name = "com.debyt.testCases.TC_Signup" /> -->
+			<class name = "com.debyt.testCases.TC_Signup_1_DDT" />
 		</classes>
 	</test>
 
