@@ -1,10 +1,13 @@
 package com.debyt.pageObjects;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class LoginPage {
 
@@ -22,11 +25,11 @@ public class LoginPage {
 	 @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[1]/div/a")	 
 	 WebElement signupBtn;
 	 
-	 @FindBy(id = "email")
+	 @FindBy(xpath = "//*[@id=\"email\"]")
 	 @CacheLookup
 	 WebElement txt_email;
 	 
-	 @FindBy(id = "password")
+	 @FindBy(xpath = "//*[@id=\"password\"]")
 	 @CacheLookup
 	 WebElement txt_pass;
 	 
@@ -38,7 +41,7 @@ public class LoginPage {
 	 @CacheLookup
 	 WebElement forgotPass;
 	 
-	 @FindBy(css = "#root > div:nth-child(2) > div.ant-col.right-col.ant-col-xs-24.ant-col-sm-24.ant-col-md-8.ant-col-xl-8 > div > div > form > div:nth-child(5) > div > div > span > button")
+	 @FindBy(xpath = "//*[@id=\"root\"]/div[2]/div[2]/div/div/form/div[4]/div/div/span/button")
 	 @CacheLookup
 	 WebElement loginBtn;
 	 
@@ -72,7 +75,7 @@ public class LoginPage {
 	 @CacheLookup
 	 WebElement txt_companyWebsite;
 	 
-	 @FindBy (xpath = "//*[@id=\"tosAgreement\"]/div[1]/label/span[1]/span")
+	 @FindBy (xpath = "//*[@id=\"tosAgreement\"]/div[1]/label/span[1]")
 	 @CacheLookup
 	 WebElement chkbox_agree;
 	 
@@ -80,11 +83,28 @@ public class LoginPage {
 	 @CacheLookup
 	 WebElement btn_cont;
 	 
+	 //Elements for verification email page
+	 
+	 @FindBy (xpath = "//*[@id=\"root\"]/div/div[2]/div/div/div/div/div[2]/h3")
+	 @CacheLookup
+	 WebElement verify_txt;
+	 
+	 @FindBy (xpath = "//*[@id=\"root\"]/div/div[2]/div/div/div/div/div[3]/a/button")
+	 @CacheLookup
+	 WebElement btn_backHome;
+	 
+	 
 	 //Action Methods for signin page 
 	 
-	 public void setEmail(String email)
+	 public void setEmail(String email) throws InterruptedException
 	 {
-		 txt_email.sendKeys(email);
+		 WebDriverWait wait = new WebDriverWait(ldriver,30);
+		 
+         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"email\"]")));
+         
+         // waits for the page to load completely
+         
+         ldriver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys(email);;
 	 }
 	 
 	 public void setPass(String pass)
@@ -139,6 +159,11 @@ public class LoginPage {
 		 txt_companyName.sendKeys(companyName);
 	 }
 	 
+	 public void clkCompanyPhone()
+	 {
+		 txt_companyPhone.clear();
+	 }
+	 
 	 public void setCompanyPhone(String companyPhone)
 	 {
 		 txt_companyPhone.sendKeys(companyPhone);
@@ -159,7 +184,20 @@ public class LoginPage {
 		 btn_cont.click();
 	 }
 
-
-	
+	 //Verification email page action methods
 	 
+	 public WebElement getVerifyText()
+	 {
+		// explicit wait - 
+         /*WebDriverWait wait = new WebDriverWait(ldriver,30);
+
+    wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\\\"root\\\"]/div/div[2]/div/div/div/div/div[2]/h3")));
+*/         
+		  return verify_txt;
+	 }
+	
+	 public void clkBackHome()
+	 {
+		 btn_backHome.click();
+	 }
 }

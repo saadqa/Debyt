@@ -9,8 +9,7 @@
     <classes>
       <class name="com.debyt.testCases.TC_Signup_1_DDT">
         <methods>
-          <include name="teardown"/>
-          <include name="loginDDT"/>
+          <include name="loginDDT" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.debyt.testCases.TC_Signup_1_DDT -->

@@ -11,12 +11,13 @@ import java.util.ArrayList;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.debyt.testCases.TC_Signup_1_DDT;
 import com.google.common.annotations.VisibleForTesting;
-@Test
+
 public class ConnectSQLServer {
 
 	
-	public void testDB() throws ClassNotFoundException, SQLException
+	public String testDB(String wemail) throws ClassNotFoundException, SQLException
 	{
 		
 		
@@ -25,7 +26,8 @@ public class ConnectSQLServer {
 	String url = "jdbc:sqlserver://debytqasql.database.windows.net;databaseName=qamssqldebyt";
 	String UserName="debytQA";
 	String Password="Thf7yt39b9";
-	String email = "nubaid@gmail.com";
+	String email = wemail;
+	String result = null;
 	
 	Connection con = DriverManager.getConnection(url, UserName, Password);
 	
@@ -39,12 +41,18 @@ public class ConnectSQLServer {
 	
 	while (rst.next())
 	{
-		String result = rst.getNString(1);
+		result = rst.getNString(1);
 		
 		System.out.println ("Token: "+result);
+		
+		break;
 	}
 	
 	con.close();
+	
+	return result;
+	
+	
 	
 	
 

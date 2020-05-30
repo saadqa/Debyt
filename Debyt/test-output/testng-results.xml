@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Debyt" duration-ms="28591" started-at="2020-05-29T14:27:57Z" finished-at="2020-05-29T14:28:25Z">
+  <suite name="Debyt" duration-ms="32689" started-at="2020-05-30T17:24:17Z" finished-at="2020-05-30T17:24:50Z">
     <groups>
     </groups>
-    <test name="Debyt automation" duration-ms="28591" started-at="2020-05-29T14:27:57Z" finished-at="2020-05-29T14:28:25Z">
+    <test name="Debyt automation" duration-ms="32689" started-at="2020-05-30T17:24:17Z" finished-at="2020-05-30T17:24:50Z">
       <class name="com.debyt.testCases.TC_Signup_1_DDT">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_1_DDT@73ad2d6]" name="setup" is-config="true" duration-ms="22968" started-at="2020-05-29T14:27:57Z" finished-at="2020-05-29T14:28:20Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_1_DDT@3fee9989]" name="setup" is-config="true" duration-ms="18068" started-at="2020-05-30T17:24:18Z" finished-at="2020-05-30T17:24:36Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_1_DDT@73ad2d6]" name="loginDDT" duration-ms="3022" started-at="2020-05-29T14:28:21Z" data-provider="LoginData" finished-at="2020-05-29T14:28:24Z">
+        <test-method status="PASS" signature="loginDDT(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_1_DDT@3fee9989]" name="loginDDT" duration-ms="12800" started-at="2020-05-30T17:24:37Z" data-provider="LoginData" finished-at="2020-05-30T17:24:50Z">
           <params>
             <param index="0">
               <value>
@@ -32,7 +32,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[saad@gmail.com]]>
+                <![CDATA[saad@gmaill.com]]>
               </value>
             </param>
             <param index="3">
@@ -47,7 +47,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[1111111111]]>
+                <![CDATA[(111) 111-1111]]>
               </value>
             </param>
             <param index="6">
@@ -59,10 +59,6 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginDDT -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup_1_DDT@73ad2d6]" name="teardown" is-config="true" duration-ms="777" started-at="2020-05-29T14:28:24Z" finished-at="2020-05-29T14:28:25Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
       </class> <!-- com.debyt.testCases.TC_Signup_1_DDT -->
     </test> <!-- Debyt automation -->
   </suite> <!-- Debyt -->
