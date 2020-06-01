@@ -16,7 +16,8 @@
 		<classes>
 	  	 <!--  	 -->
 		<!--  	<class name = "com.debyt.testCases.TC_Signup" /> -->
-			<class name = "com.debyt.testCases.TC_Signup_1_DDT" />
+		<!--  	<class name = "com.debyt.testCases.TC_Signup_1_DDT" /> -->
+		<class name = "com.debyt.testCases.TC_Signup_2_DDT"></class>
 		</classes>
 	</test>
 

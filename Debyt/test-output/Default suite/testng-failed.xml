@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.debyt.testCases.TC_Signup_1_DDT">
+      <class name="com.debyt.testCases.TC_Signup_2_DDT">
         <methods>
-          <include name="loginDDT"/>
+          <include name="signupStep2"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.debyt.testCases.TC_Signup_1_DDT -->
+      </class> <!-- com.debyt.testCases.TC_Signup_2_DDT -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
