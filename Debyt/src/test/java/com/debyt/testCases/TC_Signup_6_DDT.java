@@ -13,7 +13,7 @@ import com.debyt.utilities.XLUtils;
 public class TC_Signup_6_DDT extends BaseClass{
 	
 
-	@Test(priority = 0, dataProvider = "LoginData")
+	@Test(priority = 7, dataProvider = "LoginData")
 	public void signupStep4(String firstname, String lastname, String workemail, String password, String companyname,
 			String companyphone, String companywebsite) throws InterruptedException {
 		LoginPage lp = new LoginPage(driver);
@@ -21,11 +21,14 @@ public class TC_Signup_6_DDT extends BaseClass{
 		lp.setEmail(workemail);
 		lp.setPass(password);
 		lp.clickLogin();
+		
+		Thread.sleep(1000);
 
 		AccountActivation aa = new AccountActivation(driver);
 
 		aa.clkNoLater();
 		aa.clkCont();
+		Thread.sleep(2000);
 
 	}
 

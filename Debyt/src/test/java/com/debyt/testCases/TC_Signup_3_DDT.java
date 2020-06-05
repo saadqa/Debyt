@@ -15,7 +15,7 @@ import com.debyt.utilities.XLUtils;
 
 public class TC_Signup_3_DDT extends BaseClass{
 
-	@Test(priority = 0, dataProvider = "LoginData")
+	@Test(priority = 3, dataProvider = "LoginData")
 	public void signupStep3 (String firstname, String lastname, String workemail, String password, String companyname, String companyphone, String companywebsite) throws InterruptedException
 	{
 		LoginPage lp = new LoginPage(driver);
@@ -25,10 +25,12 @@ public class TC_Signup_3_DDT extends BaseClass{
 		lp.setPass(password);
 		lp.clickLogin();
 		
+		Thread.sleep(1000);
+		
 		
 	}
 	
-	@Test (priority = 1, dataProvider = "LoginData1")
+	@Test (priority = 4, dataProvider = "LoginData1")
 	public void compdetailData (String fein, String annrev, String compact) throws InterruptedException
 	{
 		CompanyDetails cd = new CompanyDetails(driver);
@@ -41,6 +43,7 @@ public class TC_Signup_3_DDT extends BaseClass{
 		cd.setCompAct(compact);
 		cd.setMerchant();		
 		cd.clkCont();
+		Thread.sleep(2000);
 		
 	}
 	

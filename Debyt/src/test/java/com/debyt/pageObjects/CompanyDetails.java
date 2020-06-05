@@ -42,7 +42,7 @@ public class CompanyDetails {
 	 
 	 public void setFein(String fein) throws InterruptedException
 	 {
-		 WebDriverWait wait = new WebDriverWait(ldriver, 10);
+		 WebDriverWait wait = new WebDriverWait(ldriver, 30);
 			WebElement element = wait.until(
 			    ExpectedConditions.visibilityOfElementLocated(By.id("comapnyDetailWizard_fein"))
 			);

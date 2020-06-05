@@ -16,7 +16,7 @@ import junit.framework.Assert;
 
 public class TC_Signup_2_DDT extends BaseClass{
 
-		@Test(priority =0, dataProvider = "LoginData")
+		@Test(priority =1, dataProvider = "LoginData")
 		public void signupStep2(String firstname, String lastname, String workemail, String password, String companyname, String companyphone, String companywebsite) throws InterruptedException, IOException
 		{
 		
@@ -26,6 +26,8 @@ public class TC_Signup_2_DDT extends BaseClass{
 		lp.setEmail(workemail);
 		lp.setPass(password);
 		lp.clickLogin();
+		
+		Thread.sleep(1000);
 		
 		boolean check1, check2, check3;
 		
@@ -48,7 +50,7 @@ public class TC_Signup_2_DDT extends BaseClass{
 		}		
 	}
 	
-	@Test(priority =1, dataProvider = "LoginData1")
+	@Test(priority =2, dataProvider = "LoginData1")
 	public void enterCompInfoData (String companylegalname, String businessaddress, String suitenumber, String city, String state, String zipcode) throws AWTException, InterruptedException, IOException
 	{
 		CompanyInformation ci = new CompanyInformation(driver);
@@ -75,8 +77,10 @@ public class TC_Signup_2_DDT extends BaseClass{
 		}
 		else
 		{
-			logger.info("Passed");
-			ci.clkContBtn();	
+			ci.clkContBtn();
+			Thread.sleep(2000);
+			logger.info("TC 2 Passed");
+				
 		}
 	}
 	

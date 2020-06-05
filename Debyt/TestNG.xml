@@ -2,26 +2,25 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name = "Debyt">
+<suite name="Debyt">
 
-<listeners>
+	<listeners>
 
-<listener class-name = "com.debyt.utilities.Reporting"/>
-</listeners>
+		<listener class-name="com.debyt.utilities.Reporting" />
+	</listeners>
 
 
 
-	<test name = "Debyt automation">
-		<parameter name = "browser" value = "chrome"/>
+	<test name="Debyt automation">
+		<parameter name="browser" value="chrome" />
 		<classes>
-	  	 <!--  	 -->
-		<!--  	<class name = "com.debyt.testCases.TC_Signup" /> -->
-		<!--  	<class name = "com.debyt.testCases.TC_Signup_1_DDT" /> -->
-		<!--    <class name = "com.debyt.testCases.TC_Signup_2_DDT"></class> -->
-		<!--  <class name="com.debyt.testCases.TC_Signup_3_DDT"></class>-->
-		<!--  <class name = "com.debyt.testCases.TC_Signup_4_DDT"></class>-->
-		<!--  <class name = "com.debyt.testCases.TC_Signup_5_DDT"></class>-->
-		<class name = "com.debyt.testCases.TC_Signup_6_DDT"></class>
+			<!-- -->
+			<!--  <class name="com.debyt.testCases.TC_Signup_1_DDT" /> 
+			<class name="com.debyt.testCases.TC_Signup_2_DDT"></class> -->
+			<class name="com.debyt.testCases.TC_Signup_3_DDT"></class> 
+			<class name="com.debyt.testCases.TC_Signup_4_DDT"></class>
+			<class name="com.debyt.testCases.TC_Signup_5_DDT"></class>
+			<class name="com.debyt.testCases.TC_Signup_6_DDT"></class>
 		</classes>
 	</test>
 

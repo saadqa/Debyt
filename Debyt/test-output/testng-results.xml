@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Debyt" duration-ms="35809" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:01:07Z">
+  <suite name="Debyt" duration-ms="155154" started-at="2020-06-05T16:03:30Z" finished-at="2020-06-05T16:06:05Z">
     <groups>
     </groups>
-    <test name="Debyt automation" duration-ms="35809" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:01:07Z">
+    <test name="Debyt automation" duration-ms="155154" started-at="2020-06-05T16:03:30Z" finished-at="2020-06-05T16:06:05Z">
       <class name="com.debyt.testCases.TC_Signup_6_DDT">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@3fee9989]" name="setup" is-config="true" duration-ms="20119" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:00:51Z">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@e45f292]" name="setup" is-config="true" duration-ms="17255" started-at="2020-06-05T16:05:28Z" finished-at="2020-06-05T16:05:45Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signupStep4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@3fee9989]" name="signupStep4" duration-ms="13995" started-at="2020-06-05T15:00:53Z" data-provider="LoginData" finished-at="2020-06-05T15:01:07Z">
+        <test-method status="PASS" signature="signupStep4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:7, instance:com.debyt.testCases.TC_Signup_6_DDT@e45f292]" name="signupStep4" duration-ms="18795" started-at="2020-06-05T16:05:46Z" data-provider="LoginData" finished-at="2020-06-05T16:06:05Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -30,7 +30,7 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[saad@gmaill.com]]>
+                <![CDATA[saddd@gmail.com]]>
               </value>
             </param>
             <param index="3">
@@ -45,7 +45,7 @@
             </param>
             <param index="5">
               <value>
-                <![CDATA[(111) 111-1111]]>
+                <![CDATA[(899) 988-0000]]>
               </value>
             </param>
             <param index="6">
@@ -57,7 +57,200 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signupStep4 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@e45f292]" name="teardown" is-config="true" duration-ms="766" started-at="2020-06-05T16:06:05Z" finished-at="2020-06-05T16:06:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
       </class> <!-- com.debyt.testCases.TC_Signup_6_DDT -->
+      <class name="com.debyt.testCases.TC_Signup_3_DDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_3_DDT@5700d6b1]" name="setup" is-config="true" duration-ms="16170" started-at="2020-06-05T16:03:30Z" finished-at="2020-06-05T16:03:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signupStep3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:3, instance:com.debyt.testCases.TC_Signup_3_DDT@5700d6b1]" name="signupStep3" duration-ms="1645" started-at="2020-06-05T16:03:48Z" data-provider="LoginData" finished-at="2020-06-05T16:03:50Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[saddd@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678aA!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Koderlabs]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[(899) 988-0000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupStep3 -->
+        <test-method status="PASS" signature="compdetailData(java.lang.String, java.lang.String, java.lang.String)[pri:4, instance:com.debyt.testCases.TC_Signup_3_DDT@5700d6b1]" name="compdetailData" duration-ms="23286" started-at="2020-06-05T16:03:50Z" data-provider="LoginData1" finished-at="2020-06-05T16:04:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1987]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[95000]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Active-De]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compdetailData -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup_3_DDT@5700d6b1]" name="teardown" is-config="true" duration-ms="775" started-at="2020-06-05T16:04:13Z" finished-at="2020-06-05T16:04:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.debyt.testCases.TC_Signup_3_DDT -->
+      <class name="com.debyt.testCases.TC_Signup_4_DDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_4_DDT@6fd02e5]" name="setup" is-config="true" duration-ms="11868" started-at="2020-06-05T16:04:14Z" finished-at="2020-06-05T16:04:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signupStep4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:5, instance:com.debyt.testCases.TC_Signup_4_DDT@6fd02e5]" name="signupStep4" duration-ms="24495" started-at="2020-06-05T16:04:27Z" data-provider="LoginData" finished-at="2020-06-05T16:04:51Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[saddd@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678aA!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Koderlabs]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[(899) 988-0000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupStep4 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup_4_DDT@6fd02e5]" name="teardown" is-config="true" duration-ms="746" started-at="2020-06-05T16:04:51Z" finished-at="2020-06-05T16:04:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.debyt.testCases.TC_Signup_4_DDT -->
+      <class name="com.debyt.testCases.TC_Signup_5_DDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_5_DDT@5bcab519]" name="setup" is-config="true" duration-ms="19613" started-at="2020-06-05T16:04:52Z" finished-at="2020-06-05T16:05:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="signupStep4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:6, instance:com.debyt.testCases.TC_Signup_5_DDT@5bcab519]" name="signupStep4" duration-ms="15548" started-at="2020-06-05T16:05:12Z" data-provider="LoginData" finished-at="2020-06-05T16:05:27Z">
+          <params>
+            <param index="0">
+              <value is-null="true"/>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ahmed]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[saddd@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[12345678aA!]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Koderlabs]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[(899) 988-0000]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[https://www.facebook.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- signupStep4 -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.debyt.testCases.TC_Signup_5_DDT@5bcab519]" name="teardown" is-config="true" duration-ms="754" started-at="2020-06-05T16:05:27Z" finished-at="2020-06-05T16:05:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.debyt.testCases.TC_Signup_5_DDT -->
     </test> <!-- Debyt automation -->
   </suite> <!-- Debyt -->
 </testng-results>

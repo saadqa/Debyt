@@ -28,7 +28,7 @@ import junit.framework.Assert;
 
 public class TC_Signup_1_DDT extends BaseClass{
 	
-	@Test(dataProvider = "LoginData")
+	@Test(priority = 0,dataProvider = "LoginData")
 	public void loginDDT(String firstname, String lastname, String workemail, String password, String companyname, String companyphone, String companywebsite) throws InterruptedException, IOException, SQLException, ClassNotFoundException, AWTException
 	{
 		LoginPage lp = new LoginPage(driver);
