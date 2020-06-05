@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Debyt" duration-ms="45139" started-at="2020-06-03T14:29:14Z" finished-at="2020-06-03T14:29:59Z">
+  <suite name="Debyt" duration-ms="35809" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:01:07Z">
     <groups>
     </groups>
-    <test name="Debyt automation" duration-ms="45139" started-at="2020-06-03T14:29:14Z" finished-at="2020-06-03T14:29:59Z">
-      <class name="com.debyt.testCases.TC_Signup_3_DDT">
-        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_3_DDT@3fee9989]" name="setup" is-config="true" duration-ms="19509" started-at="2020-06-03T14:29:15Z" finished-at="2020-06-03T14:29:34Z">
+    <test name="Debyt automation" duration-ms="35809" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:01:07Z">
+      <class name="com.debyt.testCases.TC_Signup_6_DDT">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@3fee9989]" name="setup" is-config="true" duration-ms="20119" started-at="2020-06-05T15:00:31Z" finished-at="2020-06-05T15:00:51Z">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="signupStep3(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_3_DDT@3fee9989]" name="signupStep3" duration-ms="1105" started-at="2020-06-03T14:29:36Z" data-provider="LoginData" finished-at="2020-06-03T14:29:37Z">
+        <test-method status="PASS" signature="signupStep4(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.debyt.testCases.TC_Signup_6_DDT@3fee9989]" name="signupStep4" duration-ms="13995" started-at="2020-06-05T15:00:53Z" data-provider="LoginData" finished-at="2020-06-05T15:01:07Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -56,29 +56,8 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- signupStep3 -->
-        <test-method status="PASS" signature="compdetailData(java.lang.String, java.lang.String, java.lang.String)[pri:1, instance:com.debyt.testCases.TC_Signup_3_DDT@3fee9989]" name="compdetailData" duration-ms="21660" started-at="2020-06-03T14:29:38Z" data-provider="LoginData1" finished-at="2020-06-03T14:29:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[6547]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[95000]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[Active-De]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- compdetailData -->
-      </class> <!-- com.debyt.testCases.TC_Signup_3_DDT -->
+        </test-method> <!-- signupStep4 -->
+      </class> <!-- com.debyt.testCases.TC_Signup_6_DDT -->
     </test> <!-- Debyt automation -->
   </suite> <!-- Debyt -->
 </testng-results>

@@ -7,12 +7,12 @@
   <test thread-count="5" name="Debyt automation(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.debyt.testCases.TC_Signup_3_DDT">
+      <class name="com.debyt.testCases.TC_Signup_5_DDT">
         <methods>
-          <include name="compdetailData" invocation-numbers="0"/>
+          <include name="signupStep4" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- com.debyt.testCases.TC_Signup_3_DDT -->
+      </class> <!-- com.debyt.testCases.TC_Signup_5_DDT -->
     </classes>
   </test> <!-- Debyt automation(failed) -->
 </suite> <!-- Failed suite [Debyt] -->
