@@ -6,7 +6,6 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import com.debyt.pageObjects.ChooseYourPlan;
-import com.debyt.pageObjects.LeadershipInformation;
 import com.debyt.pageObjects.LoginPage;
 import com.debyt.utilities.XLUtils;
 

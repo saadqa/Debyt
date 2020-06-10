@@ -12,10 +12,9 @@ import com.debyt.pageObjects.CompanyInformation;
 import com.debyt.pageObjects.LoginPage;
 import com.debyt.utilities.XLUtils;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 public class TC_Signup_2_DDT extends BaseClass{
-
 		@Test(priority =1, dataProvider = "LoginData")
 		public void signupStep2(String firstname, String lastname, String workemail, String password, String companyname, String companyphone, String companywebsite) throws InterruptedException, IOException
 		{

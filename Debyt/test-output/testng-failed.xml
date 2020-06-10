@@ -7,9 +7,32 @@
   <test thread-count="5" name="Debyt automation(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="com.debyt.testCases.TC_Signup_3_DDT">
+        <methods>
+          <include name="teardown"/>
+          <include name="signupStep3"/>
+          <include name="compdetailData"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.debyt.testCases.TC_Signup_3_DDT -->
+      <class name="com.debyt.testCases.TC_Signup_6_DDT">
+        <methods>
+          <include name="teardown"/>
+          <include name="signupStep4"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.debyt.testCases.TC_Signup_6_DDT -->
+      <class name="com.debyt.testCases.TC_Signup_4_DDT">
+        <methods>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="signupStep4"/>
+        </methods>
+      </class> <!-- com.debyt.testCases.TC_Signup_4_DDT -->
       <class name="com.debyt.testCases.TC_Signup_5_DDT">
         <methods>
-          <include name="signupStep4" invocation-numbers="0"/>
+          <include name="teardown"/>
+          <include name="signupStep4"/>
           <include name="setup"/>
         </methods>
       </class> <!-- com.debyt.testCases.TC_Signup_5_DDT -->

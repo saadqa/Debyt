@@ -24,7 +24,8 @@ import com.debyt.database.ConnectSQLServer;
 import com.debyt.pageObjects.LoginPage;
 import com.debyt.utilities.XLUtils;
 
-import junit.framework.Assert;
+import org.junit.Assert;
+
 
 public class TC_Signup_1_DDT extends BaseClass{
 	

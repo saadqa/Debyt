@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 
 import com.debyt.pageObjects.LoginPage;
 
-import junit.framework.Assert;
+import org.junit.Assert;
 
 
 

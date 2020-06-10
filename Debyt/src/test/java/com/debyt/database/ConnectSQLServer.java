@@ -2,17 +2,9 @@ package com.debyt.database;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
-
-import com.debyt.testCases.TC_Signup_1_DDT;
-import com.google.common.annotations.VisibleForTesting;
 
 public class ConnectSQLServer {
 
